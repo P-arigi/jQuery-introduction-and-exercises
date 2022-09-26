@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        This is an article.
+        <div>
+            <p>This is a paragraph inside of a div inside of an article.</p>
+        </div>
+        <input id="edit_user" type="text" value="My user name">
+        <ul class="items">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </article>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $childDivsArticleInside=$("article").find("div").children();
+        })
+        var $firstLi = $("li")[0];
+        $firstLi.innerText; //"Item 1"
+
+        var $firstLi = $("li").eq(0);
+        var $secondLi = $("li").eq(1);
+        $firstLi.text(); // "Item 1"
+        $secondLi.text(); // "Item 2"
+    </script>
+</body>
+</html>

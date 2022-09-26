@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    // the DOM has now loaded
+});
+
+$(function() {
+    // a shorter way to wait for the DOM to load
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // a longer way to wait for the DOM to load, without jQuery.
+    // jQuery's syntax is much shorter!
+});

@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    var mainElement = document.getElementById('main'); // THIS IS NOT GREAT!
+});
+
+/*Why is the code above not great? Because we are mixing jQuery with vanilla JavaScript, when jQuery 
+offers us a more concise syntax! So let's use jQuery selectors instead of document.getElementbyId.
+ A cleaner version would be: */
+
+$(document).ready(function(){
+    var $mainElement=$("#main")});
+    
+    /* 1.What is jQuery? What does it enable you to do?
+    jQuery is the most popular library on the web today. It's a library of JavaScript functions that make 
+    it easy for webpage developers to do common tasks-- like manipulating the webpage, responding to user 
+    events, getting data from their servers, building effects and animations, and much more.
+
+    2.What does the $ represent in jQuery?
+    $ sign is just a valid javascript identifier which is used as an alias for jQuery. */
